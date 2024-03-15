@@ -32,7 +32,7 @@ jobs:
         iireset /stop
         cd ..
         xcopy /s /y * C:\inetpub\wwwroot
-        iireset /start
+        iisreset /start
         
     
         
