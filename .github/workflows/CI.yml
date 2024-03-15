@@ -26,6 +26,10 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: dotnet publish
+      shell: cmd
+      run : |
+        dotnet publish -c Release -o .\myapp
     - name: Deploy to IIS
       shell: cmd
       run: |
