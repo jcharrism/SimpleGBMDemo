@@ -29,6 +29,10 @@ jobs:
     - name: Deploy to IIS
       shell: cmd
       run: |
-        dir
+        iireset /stop
+        cd ..
+        xcopy /s /y * C:\inetpub\wwwroot
+        iireset /start
+        
     
         
