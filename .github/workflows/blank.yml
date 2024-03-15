@@ -29,8 +29,6 @@ jobs:
     - name: Deploy to IIS
       shell: cmd
       run: |
-        iisreset /stop
-        xcopy /s /y .\SimpleGBMDemo\SimpleGBMDemo\* C:\inetpub\wwwroot
-        iisreset /start
+        dir
     
         
